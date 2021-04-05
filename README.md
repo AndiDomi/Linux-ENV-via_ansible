@@ -7,6 +7,7 @@
 - [ ] Research ansible-galaxy 
 
 ###### Highest priority taks to implement in this ansible playbook:
+- [ ] refactor playbook for better readibility
 - [ ] check that python is at version 3.8.4^
 - [ ] get .dot files from github repo
 - [ ] install nvim
