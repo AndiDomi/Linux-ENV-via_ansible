@@ -1,0 +1,9 @@
+---
+- host: localhost # we do not need a host here as it will use ansible-pull
+  connection: local # no need for openssh/ssh
+  become: true    # sudo privileges 
+
+  task:
+  - name: install htop
+    package:
+      name: htop
