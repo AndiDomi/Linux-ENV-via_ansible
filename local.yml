@@ -40,6 +40,10 @@
         - firefox
         - chrome-dev
         #- mercurial
+  - name: " Get .dot files from github"
+    get_url:
+      url: 
+      dest: ~/.bashrc
 
   # todo install docker, docker-compose
   # todo: install 

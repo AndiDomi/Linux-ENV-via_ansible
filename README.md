@@ -5,19 +5,36 @@
 ###### Things to be learned a prior
 - [ ] Research how to install this tools in ansible-pull
 - [ ] Research ansible-galaxy 
+> [https://www.youtube.com/watch?v=FaXVZ60o8L8]
+> To have roles located localy we create a file name ansible.cfg and inside we paste this variable:
+``` roles_path = ./roles ```
+> where ./roles is the location of the folder that will hold these roles
+> Also to have all the roles detailed in a single file we create a requirements.yml file which holds all the roles
+> Example:
+```
+---
+roles:
+  - name: geerlingguy.homebrew
+    version: 3.1.0
+  - name: elliotweiser.osx-command-line-tools
+    version: 2.3.0
+```
+> Then to install:
+```
+ansible-galaxy install -r requirements.yml
+```
 
 ###### Highest priority taks to implement in this ansible playbook:
-- [ ] refactor playbook for better readibility
-- [ ] check that python is at version 3.8.4^
 - [ ] get .dot files from github repo
 - [ ] install nvim
 - [ ] get .vimrc files from github repo
+- [ ] check that python is at version 3.8.4^
 - [ ] install docker, docker-compose
 - [ ] install k8s
 - [ ] install docker-cluster (?)
 - [ ] install java
 - [ ] install pycharm, webstorm
-
+- [ ] refactor playbook for better readibility
 
 ###### Usefull tools to integrate in the playbook but needs manual steps to be installed
 - [ ] glances: more info about your system https://nicolargo.github.io/glances/
