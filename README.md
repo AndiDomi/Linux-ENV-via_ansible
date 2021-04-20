@@ -3,8 +3,8 @@
 ##### Work in progress for auto configuring a dev-env in linux while learning Ansible 
 
 ###### Things to be learned a prior
-- [ ] Research how to install this tools in ansible-pull
-- [ ] Research ansible-galaxy 
+- [x] Research how to install this tools in ansible-pull
+- [x] Research ansible-galaxy 
 > [https://www.youtube.com/watch?v=FaXVZ60o8L8]
 > To have roles located localy we create a file name ansible.cfg and inside we paste this variable:
 ``` roles_path = ./roles ```
